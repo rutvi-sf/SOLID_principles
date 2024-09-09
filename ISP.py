@@ -9,7 +9,6 @@ class Order:
         self.total_price = self.calculate_total()
 
     def create_order(self):
-        # Step 1: Create the order
         print(f"Order created for {self.customer}. Total: {order.total_price}")
 
     def calculate_total(self):
@@ -50,7 +49,7 @@ class ThirdPartyPaymentProcessor(ThirdPartyProcessor):
         self.total_price = total_price
 
     def process_payment(self, total_price):
-        print(f"Processing third party payment of {total_price} for {customer}...")
+        print(f"Processing third party payment of {total_price}")
         return "SUCCESS"  # Assume payment is always successful
 
 
@@ -66,7 +65,6 @@ class NotificationService:
         print(f"Sending notification to {customer}: {message}")
 
 
-# Usage: Adhering to SRP
 customer = "John Doe"
 items = [{"name": "Laptop", "price": 1000}, {"name": "Mouse", "price": 50}]
 order = Order(customer, items)

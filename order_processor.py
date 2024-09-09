@@ -37,7 +37,6 @@ class OrderManager:
         print(f"Sending notification to {customer}: {message}")
 
 
-# Usage: Violating SRP
 order_manager = OrderManager()
 customer = "John Doe"
 items = [{"name": "Laptop", "price": 1000}, {"name": "Mouse", "price": 50}]

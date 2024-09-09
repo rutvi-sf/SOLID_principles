@@ -60,7 +60,6 @@ class NotificationService:
         print(f"Sending notification to {customer}: {message}")
 
 
-# Usage: Adhering to SRP
 customer = "John Doe"
 items = [{"name": "Laptop", "price": 1000}, {"name": "Mouse", "price": 50}]
 order = Order(customer, items)
